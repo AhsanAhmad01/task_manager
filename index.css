@@ -37,12 +37,12 @@ body
 {
   display:inline-flex;
   flex-direction: column;
-  box-shadow: 1px 1px 1px 1px rgb(114, 114, 114);
+  box-shadow: 1px 1px 1px  rgb(44, 44, 44);
 
 
     height:500px;
     width:40vw;
-    background-color: rgba(255, 255, 255, 0.548);
+    background-color: rgba(255, 255, 255, 0.806);
     color: rgb(0, 0, 0);
   
     border-radius:5% ;
@@ -154,13 +154,14 @@ ul{
     width: 98%;
     border: 0;
     outline: 0;
-    font-size: 1.5rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 5px;
     background-color: unset;
-    color: rgba(2, 120, 75, 0.995);
+    color: rgba(45, 108, 255, 0.995);
     resize: none;
     position: relative;
+  
    
 }
 

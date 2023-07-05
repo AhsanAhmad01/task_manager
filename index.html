@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Controller</title>
+    <title>task_manager</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body onload="update();">
@@ -32,7 +32,7 @@
     <!-- google _____________________________________________________________-->
     <!-- google _____________________________________________________________-->
     <div id="search">
-      <form action="https://google.com/search" method="get">
+      <form action="https://google.com/search" method="get" target="_blank">
         <input type="text" name="q" id="google" placeholder="Search here" />
       </form>
     </div>
@@ -66,9 +66,9 @@
 
       <div class="note" id="note2">
         <h2>
-          <button style="margin-right: 5px" onclick="add_note()">add</button
-          >Note
-          <button id="save" onclick="save_note()">save</button>
+          <button id="save" onclick="save_note()">save</button>Note
+
+          <button style="margin-right: 5px" onclick="add_note()">add</button>
         </h2>
 
         <textarea name="" id="area" cols="30" rows="10"></textarea>
