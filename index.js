@@ -333,7 +333,7 @@ if ( !localStorage.getItem("site_counter"))
 
 
 
-for (i = parseInt(localStorage.getItem("site_counter")); i >=1; i--)
+for (i = 1; i <=parseInt(localStorage.getItem("site_counter")); i++)
 {    
     
   
