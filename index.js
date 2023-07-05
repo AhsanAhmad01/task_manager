@@ -29,17 +29,17 @@ function date()
     var da= now.getDate();
     var m = now.getMonth()+1;
     var y = now.getFullYear()
-    var day;
+    var day = now.getDay();
     
-    switch (now.getDay())
+    switch (parseInt(now.getDay()))
     {
-        case 0: day = "sun";
-        case 1: day = "mon";
-        case 2: day = "tue";
-        case 3: day = "wed";
-        case 4: day = "thu";
-        case 5: day = "fri";
-        case 6: day = "sat";
+        case 0: day = "sun"; break;
+        case 1: day = "mon"; break;
+        case 2: day = "tue"; break;
+        case 3: day = "wed"; break;
+        case 4: day = "thu"; break;
+        case 5: day = "fri"; break;
+        case 6: day = "sat";break;
     }
     
     date_.innerHTML = `${da} / ${m} / ${y} , ${day}`
@@ -48,6 +48,39 @@ function date()
 }
 
 date()
+
+// search___________________________________________________________________________
+// search___________________________________________________________________________
+var b = false
+  
+
+document.querySelector("#google").addEventListener("click",
+function (event)
+{
+ 
+    if (b == true) {
+        this.value = ""
+        b = false}
+  
+   
+
+    
+})
+document.querySelector("#google").addEventListener("keypress",
+    function (event)
+    {
+      
+        if (event.key == "Enter")
+            b = true
+    
+       
+
+        
+    })
+
+
+
+
 
 
 
@@ -196,7 +229,6 @@ const save = document.querySelector("#save")
 
 
 
-
 function add_note()
 {
 
@@ -301,7 +333,7 @@ if ( !localStorage.getItem("site_counter"))
 
 
 
-for (i = 1; i <= parseInt(localStorage.getItem("site_counter")); i++)
+for (i = 1; i <=parseInt(localStorage.getItem("site_counter")); i++)
 {    
     
   
@@ -332,7 +364,7 @@ function add_site(path, nam )
 
     iteam.className = "site_iteam"
 
-    iteam.innerHTML = `<a title="${nam}" href="${path}"
+    iteam.innerHTML = `<a title="${nam}" href="${path}" target = "_blank"
     ><img src="${path}favicon.ico" alt="${nam}" />
   </a>
   <i>${nam}</i>
